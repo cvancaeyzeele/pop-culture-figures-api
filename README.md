@@ -1,1 +1,0 @@
-# pop-culture-figures-api

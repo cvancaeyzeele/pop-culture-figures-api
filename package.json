@@ -1,31 +1,26 @@
 {
   "name": "pop-culture-figures-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "description": "An API that returns names of famous people.",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .",
-    "dev": "nodemon . & npm run scss",
-    "scss": "sass --watch src/scss/main.scss public/styles/main.css"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enragedbreakfast/pop-culture-figures-api.git"
+    "url": "git+https://github.com/cvancaeyzeele/pop-culture-figures-api.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Courtney VanCaeyzeele",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/enragedbreakfast/pop-culture-figures-api/issues"
+    "url": "https://github.com/cvancaeyzeele/pop-culture-figures-api/issues"
   },
-  "homepage": "https://github.com/enragedbreakfast/pop-culture-figures-api#readme",
+  "homepage": "https://github.com/cvancaeyzeele/pop-culture-figures-api#readme",
   "dependencies": {
-    "express": "^4.18.1",
-    "mongodb": "^4.7.0",
-    "sass": "^1.52.3"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.16"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0",
+    "nodemon": "^2.0.20"
   }
 }
