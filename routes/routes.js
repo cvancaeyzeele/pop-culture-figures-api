@@ -28,7 +28,14 @@ router.get('/getAll', async (req, res) => {
     }
 })
 
-//TODO: function to get all people belonging to specified category
+router.get('/getCategory/:category', async (req, res) => {
+    try {
+        const data = await Model.find({category: req.params.category});
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({message: error.message});
+    }
+})
 
 router.get('/get/:id', async (req, res) => {
     try {
@@ -39,9 +46,14 @@ router.get('/get/:id', async (req, res) => {
     }
 })
 
-//TODO: function to find by name
-
 //TODO: function to return x number of random entries
+router.get('/getRandom/:number', async (req, res) => {
+    try {
+        
+    } catch (error) {
+        res.status(500).json({message: error.message});
+    }
+})
 
 router.patch('/update/:id', async (req, res) => {
     try {
