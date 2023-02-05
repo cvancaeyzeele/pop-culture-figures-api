@@ -46,10 +46,14 @@ router.get('/get/:id', async (req, res) => {
     }
 })
 
-//TODO: function to return x number of random entries
-router.get('/getRandom/:number', async (req, res) => {
+router.get('/getRandom', async (req, res) => {
     try {
-        
+        Model.count().exec(function (err, count) {
+            var random = Math.floor(Math.random() * count)
+            Model.findOne().skip(random).exec(function (err, result) {
+                res.json(result);
+            })
+        })
     } catch (error) {
         res.status(500).json({message: error.message});
     }
