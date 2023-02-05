@@ -4,7 +4,7 @@
   "description": "An API that returns names of famous people.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "nodemon app.js"
   },
   "repository": {
@@ -22,5 +22,8 @@
     "express": "^4.18.2",
     "mongoose": "^6.9.0",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "jest": "^29.4.1"
   }
 }
