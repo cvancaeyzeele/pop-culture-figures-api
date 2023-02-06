@@ -24,6 +24,6 @@ app.get("/getTwo", (req, res, next) => {
     res.json();
 })
 
-app.listen(3000, () => {
+app.listen(8080, '0.0.0.0', () => {
     console.log("Server running on port 3000");
 })
